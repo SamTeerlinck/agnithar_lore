@@ -401,6 +401,38 @@
     padding: 2px 7px;
   }
 
+  /* ── DEITY PORTRAIT SLOT ── */
+  .deity-portrait {
+    width: 100%;
+    aspect-ratio: 3 / 4;
+    margin-bottom: 16px;
+    border: 1px dashed rgba(201,162,39,0.35);
+    background: rgba(201,162,39,0.04);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    color: var(--gold-dark);
+    font-family: 'Cinzel', serif;
+    font-size: 0.6rem;
+    letter-spacing: 0.15em;
+    text-align: center;
+    transition: background 0.2s, border-color 0.2s;
+    overflow: hidden;
+  }
+  .deity-portrait:hover {
+    background: rgba(201,162,39,0.08);
+    border-color: rgba(201,162,39,0.55);
+  }
+  .deity-portrait .slot-icon  { font-size: 2rem; opacity: 0.35; }
+  .deity-portrait .slot-label { opacity: 0.6; }
+  /* To replace with a real portrait image:
+     Delete the entire .deity-portrait div and use:
+     <img src="your-image.jpg" alt="Deity Name"
+          style="width:100%;aspect-ratio:3/4;object-fit:cover;margin-bottom:16px;border:1px solid var(--divider);display:block;">
+  */
+
   /* ─── FOOTER ─── */
   footer {
     text-align: center;
@@ -473,11 +505,7 @@
            Example replacement:
            <img src="images/great-forge.jpg" alt="The Great Forge" style="width:100%;margin-top:16px;border:1px solid var(--divider);">
       -->
-      <div class="img-slot">
-        <div class="slot-icon">🔥</div>
-        <div class="slot-label">IMAGE PLACEHOLDER</div>
-        <div class="slot-hint">The Great Forge / World Creation</div>
-      </div>
+      <img src="Agnithar the Forgefather.png" alt="Agnithar the Forgefather" style="width:100%; margin-top:16px; border:1px solid var(--divider);">
     </div>
     <div class="entry-spacer"></div>
   </div>
@@ -492,11 +520,7 @@
         <p>Upon completion, the being's initial radiance dimmed — skin became ash and shadow, armor cooled to cracked obsidian, and within burned a deep crimson fire. This was <strong>Velthir</strong>, the First Apprentice, whose very first act was defiance. He named himself a reflection of Agnithar's flaws.</p>
         <p>Unable to destroy Velthir without destroying part of himself, Agnithar sealed the Great Forge and withdrew to reflect. The Age of Darkness had begun.</p>
       </div>
-      <div class="img-slot">
-        <div class="slot-icon">💀</div>
-        <div class="slot-label">IMAGE PLACEHOLDER</div>
-        <div class="slot-hint">Velthir the First Apprentice / Obsidian Dark Figure</div>
-      </div>
+      <img src="Velthir.png" alt="Velthir" style="width:100%; margin-top:16px; border:1px solid var(--divider);">
     </div>
     <div class="entry-spacer"></div>
   </div>
@@ -519,11 +543,7 @@
         <p>He created the <strong>Draconic Diarchies</strong> — five chromatic King-Queen pairs ruling separate dominions — and founded the <strong>Necrotic Council of the Deathless</strong>, nine immortal liches who introduced undeath and necromancy to the world. He also spawned <strong>Szarveniss the Serpent Queen</strong>, who established the Venomous Court.</p>
         <p>Continents sank and rose. The stars dimmed. The world was defined by perpetual conflict.</p>
       </div>
-      <div class="img-slot">
-        <div class="slot-icon">🐉</div>
-        <div class="slot-label">IMAGE PLACEHOLDER</div>
-        <div class="slot-hint">Chromatic Dragons / Hell / Age of Darkness</div>
-      </div>
+      <img src="Age of Darkness.png" alt="Age of Darkness" style="width:100%; margin-top:16px; border:1px solid var(--divider);">
     </div>
     <div class="entry-spacer"></div>
   </div>
@@ -548,11 +568,11 @@
         <strong>Elarea, the Wild</strong> — wilderness, nature, and renewal; she spread life across scorched lands and created the elves.<br>
         <strong>Lorveth, the Shadow</strong> — secrets, stealth, and manipulation; she fused existing races with her shadows, spawning dark elves.</p>
       </div>
-      <div class="img-slot">
+      <!-- <div class="img-slot">
         <div class="slot-icon">⚡</div>
         <div class="slot-label">IMAGE PLACEHOLDER</div>
         <div class="slot-hint">The Flawed Four — Four Deity Portraits</div>
-      </div>
+      </div> -->
     </div>
     <div class="entry-spacer"></div>
   </div>
@@ -581,11 +601,7 @@
         <strong>Dalia</strong> (Mother of Hearth) — compassion, family, and harvest; created the halflings.<br>
         <strong>Zerathis</strong> (The God-Sorcerer) — magic and time; wove the Weave of Magic and gifted it to all races.</p>
       </div>
-      <div class="img-slot">
-        <div class="slot-icon">📖</div>
-        <div class="slot-label">IMAGE PLACEHOLDER</div>
-        <div class="slot-hint">The Sacred Six — Six Deity Portraits or Group Art</div>
-      </div>
+      <img src="Agnithar creating Zerathis.png" alt="Agnithar creating Zerathis" style="width:100%; margin-top:16px; border:1px solid var(--divider);">
     </div>
     <div class="entry-spacer"></div>
   </div>
@@ -607,11 +623,7 @@
         <p>Agnithar applied all wisdom gained from his previous creations and forged one final being — using his remaining divine power and the last embers of Caldur's essence itself. This was <strong>Havilar</strong>, shaped with balance, purpose, and unity as his very core. He stood as the direct opposite of Velthir: light against shadow, justice against corruption.</p>
         <p>Havilar created the race of <strong>humans</strong> as the embodiment of adaptability and ambition. Spent of all remaining power, Agnithar cast his hammer and anvil into the sky — the <strong>twin moons</strong> — and retreated into the Great Forge to slumber forever.</p>
       </div>
-      <div class="img-slot">
-        <div class="slot-icon">👑</div>
-        <div class="slot-label">IMAGE PLACEHOLDER</div>
-        <div class="slot-hint">Havilar the God-King — Golden Armored Figure with Radiant Crown</div>
-      </div>
+      <img src="Birth of Havilar.png" alt="Birth of Havilar" style="width:100%; margin-top:16px; border:1px solid var(--divider);">
     </div>
     <div class="entry-spacer"></div>
   </div>
@@ -624,11 +636,11 @@
         <p>Havilar united the Sacred Six and declared open war on Velthir — the <strong>Radiant Crusade</strong>. He founded the <strong>Order of the Dawnflame</strong> as his elite military force and constructed the four <strong>Bastions of Dawn</strong>: Dawnmount, Dawnview, Dawnkeep, and Dawnhold. None ever fell to the enemy.</p>
         <p>Havilar and Sylmera sent visions of hope to <strong>Lorveth</strong>, who defected and became a crucial double agent embedded in Velthir's command — planting the seeds of his downfall.</p>
       </div>
-      <div class="img-slot">
+      <!-- <div class="img-slot">
         <div class="slot-icon">⚔️</div>
         <div class="slot-label">IMAGE PLACEHOLDER</div>
         <div class="slot-hint">The Radiant Crusade — Army of Light vs Darkness / Bastions of Dawn</div>
-      </div>
+      </div> -->
     </div>
     <div class="entry-spacer"></div>
   </div>
@@ -641,11 +653,7 @@
         <p>Havilar's masterstroke: for one year his forces feigned collapse, guided by Lorveth's deception from within Velthir's ranks. Blinded by arrogance, Velthir gathered almost all his armies and marched on the two Havilarian Bastions. To reach Dawnmount, he had to cross a narrow isthmus flanked by cliffs hundreds of meters high.</p>
         <p>Grunur had carved vast tunnels inside those cliffs. Zerathis concealed thousands of troops within them with illusions. When Velthir's army stepped onto the isthmus, it was surrounded and trapped. Velthir suffered his first decisive defeat. <strong>This battle marks Year 1 AC</strong> — the foundational date of the Havilarian Calendar. The city of Havilar's Crossing was later built on the isthmus itself.</p>
       </div>
-      <div class="img-slot">
-        <div class="slot-icon">🗺️</div>
-        <div class="slot-label">IMAGE PLACEHOLDER</div>
-        <div class="slot-hint">Battle at the Crossing — Isthmus Ambush / Battle Map Artwork</div>
-      </div>
+	  <img src="Havilar battling Velthir.png" alt="Battle at the Crossing" style="width:100%; margin-top:16px; border:1px solid var(--divider);">
     </div>
     <div class="entry-spacer"></div>
   </div>
@@ -658,11 +666,11 @@
         <p>Velthir could not be destroyed — all gods share the spark of Caldur and cannot unmake one another. The Sacred Six sacrificed a portion of their own divine essence to reforge Agnithar's ancient chariot and open a portal to a barren prison world.</p>
         <p>Havilar secretly planned to go himself. He commandeered the chariot, chained Velthir to it, and departed — becoming Velthir's <strong>eternal jailor</strong> on what he called the <strong>Eternal Battlefield</strong>. Before departing, he revealed his secret: he had fathered a demigod son named <strong>Agnilar</strong> with a mortal woman. He charged the Sacred Six to support his son.</p>
       </div>
-      <div class="img-slot">
+      <!-- <div class="img-slot">
         <div class="slot-icon">🌀</div>
         <div class="slot-label">IMAGE PLACEHOLDER</div>
         <div class="slot-hint">Havilar's Departure / Portal / Eternal Battlefield</div>
-      </div>
+      </div>  -->
     </div>
     <div class="entry-spacer"></div>
   </div>
@@ -684,11 +692,7 @@
         <p>Agnilar — eighteen years old, demigod son of Havilar — was revealed to the Sacred Six and charged with founding mortal civilization. Armed with the <strong>Twelve Commandments of the Light</strong>, the <strong>Radiant Crown</strong> bearing the Dawnflame (last ember of Caldur's fire), and the guidance of the weakened Sacred Six, he founded the <strong>Empire of Dawn</strong> and the Imperial Dynasty of Havilon within Year 1 AC.</p>
         <p>Humans, created by Havilar, followed Agnilar almost universally and immediately. The Luminaries were chosen to interpret and enforce the Commandments as both priests and judges. The gods stepped into advisory roles as mortal civilization took hold.</p>
       </div>
-      <div class="img-slot">
-        <div class="slot-icon">🏛️</div>
-        <div class="slot-label">IMAGE PLACEHOLDER</div>
-        <div class="slot-hint">Agnilar / Imperial Capital / Founding of the Empire</div>
-      </div>
+	  <img src="Agnilar looking over the construction of the city.png" alt="Agnilar overseeing the construction" style="width:100%; margin-top:16px; border:1px solid var(--divider);">
     </div>
     <div class="entry-spacer"></div>
   </div>
@@ -701,11 +705,11 @@
         <p>Agnilar still reigns as First Emperor — a demigod who has endured for seven centuries. The Empire spans Havilaria, encompassing the Heartlands, Lowlands, Vale of Dawn, and beyond. The Sacred Six have largely withdrawn from direct governance; only <strong>Barthimir</strong> still occupies his seat on the Sacred Council.</p>
         <p>The single most destabilizing question in the Empire: <strong>Agnilar has not named an heir</strong>. The Radiant Crown and the Dawnflame await a successor no one has yet been told to expect.</p>
       </div>
-      <div class="img-slot">
+      <!-- <div class="img-slot">
         <div class="slot-icon">🌅</div>
         <div class="slot-label">IMAGE PLACEHOLDER</div>
         <div class="slot-hint">The Empire of Dawn — Map, Capital City, or Agnilar Portrait</div>
-      </div>
+      </div>  -->
     </div>
     <div class="entry-spacer"></div>
   </div>
@@ -722,6 +726,7 @@
   <div class="deity-grid">
 
     <div class="deity-card">
+      <img src="Agnithar the Forgefather.png" alt="Agnithar the Forgefather" style="width:100%; aspect-ratio:3/4; object-fit:cover; margin-bottom:16px; border:1px solid var(--divider); display:block;">
       <span class="deity-group creator">The Creator</span>
       <div class="deity-name">Agnithar</div>
       <div class="deity-epithet">The Great Artisan · The Forgefather</div>
@@ -730,7 +735,8 @@
     </div>
 
     <div class="deity-card">
-      <span class="deity-group fallen">Banished</span>
+      <img src="Velthir.png" alt="Velthir" style="width:100%; aspect-ratio:3/4; object-fit:cover; margin-bottom:16px; border:1px solid var(--divider); display:block;">      
+	  <span class="deity-group fallen">Banished</span>
       <div class="deity-name">Velthir</div>
       <div class="deity-epithet">The First Apprentice · The Dark One</div>
       <div class="deity-desc">Forged from Agnithar's frustration and doubt. Filled the world with corruption, Hell, dragons, liches, and demons. Defeated at the Crossing; imprisoned on the Eternal Battlefield by Havilar for eternity.</div>
@@ -738,7 +744,8 @@
     </div>
 
     <div class="deity-card">
-      <span class="deity-group flawed">The Flawed Four</span>
+      <img src="Kaestrom.png" alt="Kaestrom" style="width:100%; aspect-ratio:3/4; object-fit:cover; margin-bottom:16px; border:1px solid var(--divider); display:block;">      
+	  <span class="deity-group flawed">The Flawed Four</span>
       <div class="deity-name">Kaestrom</div>
       <div class="deity-epithet">The Tempest · The Stormlord</div>
       <div class="deity-desc">Forged from Agnithar's restrained fury. Acts without malice, striking all sides equally. Embodies pure elemental change and inevitability.</div>
@@ -746,6 +753,7 @@
     </div>
 
     <div class="deity-card">
+      <img src="Morden.png" alt="Morden" style="width:100%; aspect-ratio:3/4; object-fit:cover; margin-bottom:16px; border:1px solid var(--divider); display:block;">
       <span class="deity-group flawed">The Flawed Four</span>
       <div class="deity-name">Morden</div>
       <div class="deity-epithet">The Bloodborn</div>
@@ -754,6 +762,7 @@
     </div>
 
     <div class="deity-card">
+      <img src="Elarea.png" alt="Elarea" style="width:100%; aspect-ratio:3/4; object-fit:cover; margin-bottom:16px; border:1px solid var(--divider); display:block;">
       <span class="deity-group flawed">The Flawed Four</span>
       <div class="deity-name">Elarea</div>
       <div class="deity-epithet">The Wild</div>
@@ -762,6 +771,7 @@
     </div>
 
     <div class="deity-card">
+      <img src="Lorveth.png" alt="Lorveth" style="width:100%; aspect-ratio:3/4; object-fit:cover; margin-bottom:16px; border:1px solid var(--divider); display:block;">
       <span class="deity-group flawed">The Flawed Four</span>
       <div class="deity-name">Lorveth</div>
       <div class="deity-epithet">The Shadow</div>
@@ -770,6 +780,7 @@
     </div>
 
     <div class="deity-card">
+      <img src="Grunur.png" alt="Grunur" style="width:100%; aspect-ratio:3/4; object-fit:cover; margin-bottom:16px; border:1px solid var(--divider); display:block;">
       <span class="deity-group sacred">The Sacred Six</span>
       <div class="deity-name">Grunur</div>
       <div class="deity-epithet">Heir to the Forge · The Stonefather</div>
@@ -778,6 +789,7 @@
     </div>
 
     <div class="deity-card">
+      <img src="Sylmera.png" alt="Sylmera" style="width:100%; aspect-ratio:3/4; object-fit:cover; margin-bottom:16px; border:1px solid var(--divider); display:block;">
       <span class="deity-group sacred">The Sacred Six</span>
       <div class="deity-name">Sylmera</div>
       <div class="deity-epithet">The Dream-Giver</div>
@@ -786,6 +798,7 @@
     </div>
 
     <div class="deity-card">
+      <img src="Barthimir.png" alt="Barthimir" style="width:100%; aspect-ratio:3/4; object-fit:cover; margin-bottom:16px; border:1px solid var(--divider); display:block;">
       <span class="deity-group sacred">The Sacred Six</span>
       <div class="deity-name">Barthimir</div>
       <div class="deity-epithet">The Keeper of Knowledge</div>
@@ -794,6 +807,7 @@
     </div>
 
     <div class="deity-card">
+      <img src="Norani.png" alt="Norani" style="width:100%; aspect-ratio:3/4; object-fit:cover; margin-bottom:16px; border:1px solid var(--divider); display:block;">
       <span class="deity-group sacred">The Sacred Six</span>
       <div class="deity-name">Norani</div>
       <div class="deity-epithet">The Traveler</div>
@@ -802,6 +816,7 @@
     </div>
 
     <div class="deity-card">
+      <img src="Dalia.png" alt="Dalia" style="width:100%; aspect-ratio:3/4; object-fit:cover; margin-bottom:16px; border:1px solid var(--divider); display:block;">
       <span class="deity-group sacred">The Sacred Six</span>
       <div class="deity-name">Dalia</div>
       <div class="deity-epithet">The Mother of Hearth and Home</div>
@@ -810,6 +825,7 @@
     </div>
 
     <div class="deity-card">
+      <img src="Zerathis.png" alt="Zerathis" style="width:100%; aspect-ratio:3/4; object-fit:cover; margin-bottom:16px; border:1px solid var(--divider); display:block;">
       <span class="deity-group sacred">The Sacred Six</span>
       <div class="deity-name">Zerathis</div>
       <div class="deity-epithet">The God-Sorcerer</div>
@@ -818,6 +834,7 @@
     </div>
 
     <div class="deity-card">
+      <img src="Havilar.png" alt="Havilar" style="width:100%; aspect-ratio:3/4; object-fit:cover; margin-bottom:16px; border:1px solid var(--divider); display:block;">
       <span class="deity-group god-king">The God-King</span>
       <div class="deity-name">Havilar</div>
       <div class="deity-epithet">God of Light and Justice · The God-King</div>
@@ -826,6 +843,7 @@
     </div>
 
     <div class="deity-card">
+      <img src="Young Agnilar depiction.png" alt="Agnilar" style="width:100%; aspect-ratio:3/4; object-fit:cover; margin-bottom:16px; border:1px solid var(--divider); display:block;">
       <span class="deity-group demigod">Demigod / Emperor</span>
       <div class="deity-name">Agnilar</div>
       <div class="deity-epithet">Son of the God-King · First Emperor of Dawn</div>
